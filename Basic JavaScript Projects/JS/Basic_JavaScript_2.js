@@ -4,3 +4,10 @@ function Click() {
     document.getElementById("Concatenate") .innerHTML = sentence;
 }
 
+function myFunction(p) {
+    return p;
+}
+
+function myFunction2() {
+    document.getElementById("testy");
+} 

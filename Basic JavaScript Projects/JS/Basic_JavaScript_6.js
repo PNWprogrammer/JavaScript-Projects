@@ -31,3 +31,13 @@ var Abe = new House("Colonial", "1850", "White");
 function House_Function() {
     document.getElementById("New_and_This").innerHTML = "This house is owned by Abe. It was built in " + Abe.House_Year + " it is a " + Abe.House_Style + " style home " + " it is painted " + Abe.House_Color;
 }
+
+function plus3_Function() {
+    document.getElementById("Nested_Function").innerHTML = plus3();
+    function plus3() {
+        var Starting_point = 3;
+        function Plus_3() {Starting_point += 3;}
+        Plus_3();
+        return Starting_point;
+    }
+}
